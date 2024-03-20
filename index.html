@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="logo">S<span>agar</span></p>
+                <ul id="sidemenu"> 
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" aria-hidden="true" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Sagar</span> <br> and I am a passoinate</h1>
+                <span id="element"></span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ABOUT SECTION -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>Strong organizational skills to juggle multiple tasks within the constraints of timelines and budgets with business acumen. Ability to work and thrive in a fast-paced environment, learn rapidly and master diverse web technologies and techniques.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Core PHP / Codeigniter / Laravel</span><br>Web Development</li>
+                            <li><span>Javascript / Jquery / Ajax</span><br>Scripting Language</li>
+                            <li><span>SQL / MYSQL</span><br>Database Server</li>
+                            <li><span>Wordpress</span><br>Content management system (CMS)</li>
+                            <li><span>Shopify</span><br>E-commerce platform</li>
+                            <li><span>HTML / CSS / Bootstrap</span><br>Designing Website</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Web Developer at Ralecon</li>
+                            <li><span>2021 - 2023</span><br>Silicon Techlab</li>
+                            <li><span>2019 - 2021</span><br>3SD Solutions And Services Pvt Ltd</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2014 - 2018</span><br>Trident Academy Of Technology</li>
+                            <li><span>2012 - 2014</span><br>Maharishi College Of Natural Law</li>
+                            <li><span>2002 - 2012</span><br>Vivekanada Shiksha Kendra</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICE SECTION -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development types have been classified into front-end development, back-end development, and full-stack development. For an excellently interactive website or web app for your business, you need to have expert developers who are specialists in their calling.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-crop" aria-hidden="true"></i>
+                    <h2>CRM</h2>
+                    <p>CRM (customer relationship management) is the combination of practices, strategies and technologies that companies use to manage and analyze customer interactions and data throughout the customer lifecycle.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                    <h2>Ecommerce Development</h2>
+                    <p>An ecommerce website is your digital storefront on the internet. It facilitates the transaction between a buyer and seller. It is the virtual space where you showcase products, and online customers make selections.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Website Development</h3>
+                        <p>This app connects you to the talented people around the world</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Website Design</h3>
+                        <p>This app connects you to the talented people around the world</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>CRM / ERP</h3>
+                        <p>This app connects you to the talented people around the world</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub_title">Contact Me</h1>
+                    <p><a href="mailto:sagarskbehera1996@gmail.com"><i class="fa fa-paper-plane" aria-hidden="true"></i> sagarskbehera1996@gmail.com</a></p>
+                    <p><a href="tel:+916370501322"><i class="fa fa-phone-square" aria-hidden="true"></i> +916370501322</a></p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                    <a href="images/my-cv.docx" download class="btn btn2">Download CV</a>
+                    <a href="https://github.com/sagarmintu" class="btn btn2" target="_blank">Visit Github</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Enter Name" required>
+                        <input type="email" name="email" placeholder="Enter Email" required>
+                        <textarea name="message" rows="6" placeholder="Enter Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Developed with <i class="fa fa-heart" aria-hidden="true"></i> love by Sagar Behera @2024 By Me</p>
+        </div>
+    </div>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Web Designer', 'Frontend Developer'],
+      typeSpeed: 50,
+    });
+</script>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu()
+    {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu()
+    {
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
